@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #fefbf3;
+}
+
+input,
+button {
+  font-size: 16px;
+  margin: 8px;
+  padding: 6px;
+}
+
+button[type="submit"] {
+  padding: 6px;
+  border-radius: 12px;
+}
+
+main {
+  overflow: auto;
+  padding: 18px;
+}
+
+/* Header */
+.head_bar {
+  padding: 10px;
+  display: flex;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  align-items: center;
+  justify-content: center;
+  background-color: #79b4b7;
+  color: white;
+}
+
+/* Book Input Form Section */
+.book_form_header,
+.uncompleted_header,
+.completed_header,
+.search_header {
+  color: rgb(48, 46, 46);
+  text-align: center;
+  margin: 0 0 22px;
+  padding-bottom: 8px;
+  border-bottom: 3px solid #79b4b7;
+}
+
+#bookRead {
+  font-weight: bold;
+}
+
+.input_section {
+  background: #f8f0df;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  width: 38%;
+  float: right;
+  font-size: 18px;
+}
+
+.input_section > form {
+  padding: 6px 8px;
+}
+
+.input_book {
+  margin-bottom: 8px;
+}
+
+.input_section input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 5px;
+}
+
+.input_section button[type="submit"] {
+  width: 100%;
+  padding: 15px 20px;
+  margin: 8px 0;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #79b4b7;
+  background-color: white;
+  color: black;
+}
+
+.input_section button[type="submit"]:hover {
+  background-color: #79b4b7;
+}
+
+/* Search Section */
+.search_section {
+  background: #f8f0df;
+  padding: 16px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  width: 60%;
+  float: left;
+  text-align: center;
+  border-radius: 12px;
+  color: #555;
+}
+
+.search_section > form > input {
+  padding: 5px 20px;
+}
+
+/* Bookshelf Section */
+.book_shelf {
+  width: 60%;
+  float: left;
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.uncompleted_book {
+  float: left;
+  background: #f8f0df;
+  padding: 16px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  border-radius: 12px;
+  width: 50%;
+}
+
+.completed_book {
+  float: right;
+  background: #f8f0df;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  margin-left: 10px;
+  border-radius: 12px;
+  padding: 16px;
+  width: 47%;
+}
+
+.book_item {
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 10px 0px;
+  margin-top: 15px;
+}
+
+/* Action Button */
+.edit_button {
+  background: url("../assets/edit-solid.svg");
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.edit_button:hover {
+  background: url("../assets/edit.svg");
+  background-size: contain;
+}
+
+.unread_button {
+  background: url("../assets/undo-solid.svg");
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.unread_button:hover {
+  background: url("../assets/undo.svg");
+  background-size: contain;
+}
+
+.read_button {
+  background: url("../assets/checkbox-solid.svg");
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.read_button:hover {
+  background: url("../assets/checkbox.svg");
+  background-size: contain;
+}
+
+.delete_button {
+  background: url("../assets/trash-solid.svg");
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.delete_button:hover {
+  background: url("../assets/trash.svg");
+  background-size: contain;
+}
+
+#searchSubmit {
+  background: url("../assets/search.svg") no-repeat;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  border: none;
+}
+
+#searchSubmit:hover {
+  background: url("../assets/search-solid.svg");
+  background-size: contain;
+}
+
+/* Footer */
+footer {
+  padding: 50px;
+  margin-top: 52px;
+  color: white;
+  background-color: #9d9d9d;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media screen and (max-width: 1000px) {
+  body,
+  input,
+  button {
+    font-size: 12px;
+  }
+  .input_section,
+  .search_section,
+  .book_shelf {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 10px;
+  }
+
+  .uncompleted_book,
+  .completed_book {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
